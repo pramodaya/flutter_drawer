@@ -1,3 +1,4 @@
+import 'package:drawerapp/screens/profile_screen.dart';
 import 'package:drawerapp/screens/second_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -39,6 +40,10 @@ class MainDrawer extends StatelessWidget {
               'Profile',
               style: TextStyle(fontSize: 18, color: Colors.grey),
             ),
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => ProfileScreen()));
+            },
           ),
           ListTile(
             leading: Icon(Icons.settings),

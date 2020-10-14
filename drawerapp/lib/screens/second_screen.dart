@@ -10,10 +10,38 @@ class SecondScreen extends StatelessWidget {
         title: Text('Second Screen'),
       ),
       drawer: MainDrawer(),
-      body: Container(
-        child: Center(
-          child: Text('Hello world'),
-        ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: [
+          Container(
+            height: 100,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.green,
+            child: Center(
+              child: Text('Hello world'),
+            ),
+          ),
+          Container(
+            height: 100,
+            width: 100,
+            color: Colors.red,
+            child: Center(
+              child: Text('Hello world'),
+            ),
+          ),
+          Container(
+            height: 100,
+            width: 100,
+            color: Colors.orange,
+            child: Center(
+              child: Text('Hello world'),
+            ),
+          ),
+          Container(
+            width: double.infinity,
+          ),
+        ],
       ),
     );
   }
